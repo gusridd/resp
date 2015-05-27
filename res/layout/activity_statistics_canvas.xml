@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_marfil" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+		<TextView
+	        android:id="@+id/room_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_weight="1.02"
+	        android:gravity="center_horizontal"
+	        android:padding="@dimen/padding_large"
+	        android:text="Sala Virtual XXXX"
+	        android:textSize="22dp" />
+        <TextView
+            android:id="@+id/current_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_large"
+            android:text="¿Cuál es la mitad de 2 más 2?"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/canvas_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/count_a"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="@style/ButtonText"
+                android:background="@drawable/dark_blue"
+                android:enabled="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/current_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current A"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/count_b"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="@style/ButtonText"
+                android:background="@drawable/green"
+                android:enabled="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/current_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current B"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/count_c"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="@style/ButtonText"
+                android:background="@drawable/red"
+                android:enabled="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/current_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current C"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/count_d"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="@style/ButtonText"
+                android:background="@drawable/skyblue"
+                android:enabled="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/current_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current D"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/count_e"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="@style/ButtonText"
+                android:background="@drawable/purple"
+                android:enabled="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/current_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current E"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/count_f"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                style="@style/ButtonText"
+                android:background="@drawable/yellow"
+                android:enabled="false"
+                android:text="20" />
+
+            <TextView
+                android:id="@+id/current_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current F"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                style="@style/ButtonText"
+                android:background="@drawable/blue_button"
+                android:text="@string/resend"
+                android:onClick="reSend"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/red_button"
+                android:text="@string/delete_counters"
+                android:onClick="eraseData"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</ScrollView>

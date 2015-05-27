@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ScrollView
+        android:id="@+id/tutorial_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tutorial_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_large"
+                android:text="TUTORIAL 1/11"
+                android:textColor="@color/negro"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/tutorial_imagen"
+                android:layout_width="317dp"
+                android:layout_height="274dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/tutorial1" />
+            
+            <TextView
+                android:id="@+id/tutorial_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_large"
+                android:layout_weight="1.85"
+                android:gravity="center"
+                android:text="@string/tutorial1"
+                android:textColor="@color/negro"
+                android:textSize="16dp" />
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.85" >
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.85" >
+
+                <Button
+                    android:id="@+id/tutorial_boton_atras"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.85"
+                    android:background="@drawable/blue_button"
+                    android:text="@string/atras" 
+                    android:onClick="atras"/>
+
+                <Button
+                    android:id="@+id/tutorial_boton_adelante"
+                    style="@style/ButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.99"
+                    android:background="@drawable/green_button"
+                    android:text="@string/adelante" 
+                    android:onClick="adelante"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

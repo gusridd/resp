@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_marfil" 
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="38dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="0.59"
+                    android:src="@drawable/resp_logo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_resumen"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:layout_marginTop="@dimen/padding_small"
+                android:text="@string/Resumen"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/Equipo"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:layout_marginTop="26dp"
+                android:layout_weight="0.21"
+                android:text="@string/Agradecimientos"
+                android:textColor="@color/negro" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
